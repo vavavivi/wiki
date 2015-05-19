@@ -123,7 +123,7 @@ public class Utils {
       } 
       for (char c : ILLEGAL_JCR_NAME_CHARACTERS.toCharArray())
         name = name.replace(c, '_');
-      name = name.replace("%20", "_");
+      name = name.replace("%22", "_");
       return name;
     }
   }
